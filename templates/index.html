@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Credit Score Classification</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container">
+        <div class="alert alert-success" role="alert">
+            <h4 class="alert-heading">Welcome to Credit Score Classification</h4>
+            <p><div class="sc-iHpopC kWfALg"><div class="sc-eFrsUN bDeBDR"><h2 class="sc-csCMJt sc-fbJfA sc-eqAOSo gttkKI hmVOek">About Model</h2></div><div class="sc-idMGot eaWsYA"><div class="sc-hLqUdS eDiNTx"><div style="min-height: 80px;"><div class="sc-dmLtQE jWwnsR"><p><br>
+                The model will predict Credit Score by using Random Forest Classifier.</p>
+                <p><strong>Task:</strong><br>
+                Provide a customer's credit-related information, the predicted credit score will be displayed.</p></div></div></div></div></div></p>
+            <hr>
+          </div>
+          <h4 class="text-center mt-3 my-3">Fill the details
+        </h4>
+          <div class="container my-4">
+
+            <form action="/" method="POST">
+
+
+                <!-- Num_Bank_Accounts -->
+
+                <div class="form-group" >
+                    <label for="Num_Bank_Accounts">Enter the Number of Bank Accounts (1-11)  </label>
+                    <input type="number" class="form-control" id="Num_Bank_Accounts" name="Num_Bank_Accounts">
+                </div>
+
+                <!-- Num_Credit_Card -->
+
+                <div class="form-group">
+                    <label for="Num_Credit_Card">Enter the Number of Credit Cards (0-11)</label>
+                    <input type="number" class="form-control" id="Num_Credit_Card" name="Num_Credit_Card">
+                </div>
+
+                <!-- Interest_Rate -->
+
+                <div class="form-group">
+                    <label for="Interest_Rate">Enter Interest Rate (upto 34%) </label>
+                    <input type="number" class="form-control" id="Interest_Rate" name="Interest_Rate">
+                </div>
+
+
+                <!-- Num_of_Loan -->
+
+                <div class="form-group">
+                    <label for="Num_of_Loan">Enter the Number of Loans (0-9) </label>
+                    <input type="number" class="form-control" id="Num_of_Loan" name="Num_of_Loan">
+                </div>
+
+
+                <!-- Delay_from_due_date -->
+
+                <div class="form-group">
+                    <label for="Delay_from_due_date">Enter how many days are delayed from the due date (0-65) </label>
+                    <input type="number" class="form-control" id="Delay_from_due_date" name="Delay_from_due_date">
+                </div>
+
+                <!--Num_of_Delayed_Payment -->
+
+                <div class="form-group">
+                <label for="Num_of_Delayed_Payment">Enter the number of days delayed from due date (0-25) </label>
+                <input type="number" class="form-control" id="Num_of_Delayed_Payment" name="Num_of_Delayed_Payment">
+                </div>
+
+                 <!-- Num_Credit_Inquiries -->
+
+                 <div class="form-group">
+                    <label for="Num_Credit_Inquiries">Enter Credit Inquiries (0-17) </label>
+                    <input type="number" class="form-control" id="Num_Credit_Inquiries" name="Num_Credit_Inquiries">
+                </div>
+
+                <!-- Credit_Mix -->
+
+                <div class="form-group">
+                    <label for="Credit_Mix">Enter Credit Mix(Poor:0, Standard:1, Good:2) </label>
+                    <input type="number" class="form-control" id="Credit_Mix" name="Credit_Mix">
+                </div>
+
+                  <!-- Outstanding_Debt -->
+
+                  <div class="form-group">
+                    <label for="Outstanding_Debt">Enter your Outstanding debit </label>
+                    <input type="number" class="form-control" id="Outstanding_Debt" name="Outstanding_Debt">
+                </div>
+                
+            
+                <!-- Credit_History_Age_inMonths -->
+
+                <div class="form-group">
+                    <label for="Credit_History_Age">Enter Credit history age in months(eg:200 months) </label>
+                    <input type="number" class="form-control" id="Credit_History_Age" name="Credit_History_Age">
+                </div>
+
+                <div class="text-center">
+                    <button class="btn btn-primary" type="submit">Predict</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+    <br>
+   
+<br>
+   
+{{ prediction }}
+
+
+</div>
+    
+  </body>
+</html>
